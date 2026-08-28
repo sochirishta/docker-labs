@@ -1,0 +1,13 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && apt-get install -y \
+    gedit \
+    xvfb \
+    x11vnc \
+    novnc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY start-gedit.sh /start-gedit.sh
+RUN chmod +x /start-gedit.sh
+
+CMD ["/start-gedit.sh"]

@@ -1,0 +1,21 @@
+services:
+  xeyes:
+    build:
+      context: .
+      dockerfile: Dockerfile.xeyes
+    ports:
+      - "6080:6080"
+
+  calc:
+    build:
+      context: .
+      dockerfile: Dockerfile.calc
+    ports:
+      - "6081:6080"
+
+  gedit:
+    build:
+      context: .
+      dockerfile: Dockerfile.gedit
+    ports:
+      - "6082:6080"

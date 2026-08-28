@@ -1,0 +1,14 @@
+FROM eclipse-temurin:17-jre
+
+RUN apt-get update && apt-get install -y \
+    xvfb \
+    x11vnc \
+    novnc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY calc.jar /calc.jar
+COPY start-calc.sh /start-calc.sh
+
+RUN chmod +x /start-calc.sh
+
+CMD ["/start-calc.sh"]

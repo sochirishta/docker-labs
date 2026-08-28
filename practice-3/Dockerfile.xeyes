@@ -1,0 +1,13 @@
+FROM ubuntu:24.04
+
+RUN apt-get update && apt-get install -y \
+    x11-apps \
+    xvfb \
+    x11vnc \
+    novnc \
+    && rm -rf /var/lib/apt/lists/*
+
+COPY start-xeyes.sh /start-xeyes.sh
+RUN chmod +x /start-xeyes.sh
+
+CMD ["/start-xeyes.sh"]
