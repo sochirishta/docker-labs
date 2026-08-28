@@ -2,3 +2,6 @@ practice-1/**/*.java linguist-vendored
 practice-1/**/*.py linguist-vendored
 practice-1/**/*.dart linguist-vendored
 practice-1/**/*.html linguist-vendored
+
+practice-2/**/*.js linguist-vendored
+practice-2/**/*.html linguist-vendored
