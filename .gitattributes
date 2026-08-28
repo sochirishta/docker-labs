@@ -4,4 +4,6 @@ practice-1/**/*.dart linguist-vendored
 practice-1/**/*.html linguist-vendored
 
 practice-2/**/*.js linguist-vendored
+practice-2/**/*.vue linguist-vendored
+practice-2/**/*.css linguist-vendored
 practice-2/**/*.html linguist-vendored
