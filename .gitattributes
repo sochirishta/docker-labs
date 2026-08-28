@@ -9,3 +9,5 @@ practice-2/**/*.css linguist-vendored
 practice-2/**/*.html linguist-vendored
 
 practice-3/**/*.java linguist-vendored
+
+**/*.js linguist-vendored
